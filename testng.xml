@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="MyTests.TestListener"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/busan/eclipse-workspace/SC_TestNG/src/test/java/MyTests/WebTextInput.java">
+        <classes>
+            <class name="MyTests.WebTextInput">
+                <methods>
+                    <include name="changeTextInputButton"/>
+                </methods>
+            </class>
+            <class name="MyTests.API_Add_Pet">
+                <methods>
+                    <include name="testAddPet"/>
+                    <include name="checkOwnerName"/>
+                    <include name="checkPetName"/>
+                    <include name="checkFailedPetName"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [All Test Suite]">
+  <listeners>
+    <listener class-name="MyTests.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="C:/Users/busan/eclipse-workspace/SC_TestNG/src/test/java/MyTests/WebTextInput.java(failed)">
+    <classes>
+      <class name="MyTests.API_Add_Pet">
+        <methods>
+          <include name="checkFailedPetName"/>
+        </methods>
+      </class> <!-- MyTests.API_Add_Pet -->
+      <class name="MyTests.WebTextInput">
+        <methods>
+          <include name="changeTextInputButton" invocation-numbers="2"/>
+        </methods>
+      </class> <!-- MyTests.WebTextInput -->
+    </classes>
+  </test> <!-- C:/Users/busan/eclipse-workspace/SC_TestNG/src/test/java/MyTests/WebTextInput.java(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
