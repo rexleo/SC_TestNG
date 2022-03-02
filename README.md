@@ -38,7 +38,7 @@ Simple Selenium automation scripts with TestNG reporting using Maven dependencie
     stages{
         stage("Build"){
             steps{
-                git credentialsId: '<get this from your Jenkin config.xml file>',
+                git credentialsId: '<get this from your Jenkins config.xml file>',
                     url: '<Github repository URL>'
                 script{
                     bat(/mvn clean install/)
@@ -55,7 +55,7 @@ Simple Selenium automation scripts with TestNG reporting using Maven dependencie
 Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M5:test (default-test) on project SC_TestNG: There are test failures.
 ```
 
-Error occurs if pipeline step below is included to extract testng-results.xml at runtime in Jenkins:
+Error occurs if pipeline step below is included to extract testng-results.xml at runtime in Jenkins, so need to refine getting results file when running in Jenkins:
 ```
 step([$class: 'Publisher', reportFilenamePattern: '**/testng-results.xml'])
 ```
