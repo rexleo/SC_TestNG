@@ -21,8 +21,7 @@ Simple Selenium automation scripts with TestNG reporting using Maven dependencie
 - Install IDE of choice 
 - Import the project
 - Run from testng.xml file or run from console using:
-```mvn clean install
-```
+```mvn clean install```
 
 ## Run from Jenkins
 - In Jenkins, create "New Item"
